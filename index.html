@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fabian Serna</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+    <body>
+
+        <header>
+            <ul class="navbar">
+                <li>
+                    <a href="#me">Acerca de mi</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#contact" class="btn-style">Contáctame</a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <section id="me" class="me">
+                <div class="me-text">
+                    <h2 class="me-title">Mi nombre<br>es <b>Fabian</b></h2>
+                    <p class="me-parag" >Soy un desarrollador y hacker profesional<br>con más de 2 años de experiencia</p>
+                    <a href="#" class="btn-style">Descargar Curriculum</a>
+                </div>
+                <div class="me-profile">
+                    <div class="me-photo">
+                        <p class="me-photo-badge">
+                            <span>2+</span><br>años de experiencia
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="skills">
+                <h3 class="subtitle">Skills</h3>
+
+                <div class="swiper skills">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="skill">
+                                <h4>Desarrollo web</h4>
+                                <p>Tengo conocimientos teóricos y prácticos sobre el desarrollo de cualquier proyecto web</p>
+                                <div class="skill-icons">
+                                    <img src="./assets/icons/html-5.png" alt="">
+                                    <img src="./assets/icons/css.png" alt="">
+                                    <img src="./assets/icons/java-script.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="skill">
+                                <h4>React Js</h4>
+                                <p>He trabajado en diversos proyectos web con el uso de esta libreria de React, como sus extensiones tales como React Hooks</p>
+                                <div class="skill-icons">
+                                    <img src="./assets/icons/react.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="skill">
+                                <h4>Desarrollo de aplicaciones</h4>
+                                <p>He desarrollado diferentes aplicaciones móviles hibridas, con el uso de herramientas como Ionic</p>
+                                <div class="skill-icons">
+                                    <img src="./assets/icons/ionic.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="skill">
+                                <h4>Linux terminal</h4>
+                                <p>Tengo conocimientos teóricos y prácticos sobre el desarrollo de cualquier proyecto web</p>
+                                <div class="skill-icons">
+                                    <img src="./assets/icons/linux.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="skill">
+                                <h4>OWASP TOP 10</h4>
+                                <p>He trabajado en diversos proyectos web con el uso de esta libreria de React, como sus extensiones tales como React Hooks</p>
+                                <div class="skill-icons">
+                                    <img src="./assets/icons/owasp.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="skill">
+                                <h4>Python Script</h4>
+                                <p>He desarrollado diferentes aplicaciones móviles hibridas, con el uso de herramientas como Ionic</p>
+                                <div class="skill-icons">
+                                    <img src="./assets/icons/python.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </section>
+            <section id="contact">
+                <h3 class="subtitle">Contacto</h3>
+
+                <form id="contactForm" class="contact" novalidate>
+                    <div class="form-group">
+                        <input type="text" name="nombre" class="form-control" id="name" placeholder="Nombre completo" required data-pristine-required-message="Ingrese un nombre por favor">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="correo" id="email" class="form-control" placeholder="Correo" data-pristine-pattern="/^[^@]+@[^@]+\.[a-zA-Z]{2,}$/" required data-pristine-required-message="Ingrese un correo por favor" data-pristine-pattern-message="Correo invalido">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" name="celular" id="phone" placeholder="Celular" required data-pristine-required-message="Ingrese un número por favor">
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="10" name="mensaje" id="message" placeholder="Mensaje" required data-pristine-required-message="Ingrese un mensaje por favor"></textarea >
+                    </div>
+                    <button id="enviar" type="submit" class="btn-style">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <div class="loading" id="loading">
+            <img src="./assets/loading.svg" alt="">
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="./scripts/pristine.min.js"></script>
+        <script src="./scripts/main.js"></script>
+    </body>
+</html>
